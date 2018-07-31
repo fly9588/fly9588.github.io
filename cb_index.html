@@ -1,0 +1,121 @@
+﻿<html>
+	<head>
+		<link rel="shortcut icon" href="icon16x16.ico">
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<title>moe_index</title>
+	</head>
+	<body style='background:url(bg_main.jpg) fixed 0 0 no-repeat #000000' bgcolor="#000000" text="#FFFFFF" link="#8482ff" vlink="#8482ff" alink="#8482ff">
+	<style>table{filter:Alpha(Opacity=80, FinishOpacity=80, Style=1)-moz-opacity:0.8;opacity:0.8;}</style>
+		<table border=0 width=suto height=auto bgcolor="#000000" cellspacing=0 cellpadding=10>
+			<tr>
+				<td align=left valign=top>
+					<font color = "#FFFFFF">
+						<font color = "#FFFF00"><center>萌團公會暫存網頁</center></font>
+						<hr color="#FFFFFF">
+						<center><font color="#00FF00">公會公告</font><br></center>
+						無。<br>
+						<hr color="#FFFFFF">
+						<center><font color="#00FF00">讓 CB 執行較順暢的方法(可能)</font><br></center>
+						將下列文字複製至文字檔後，修改副檔名為 *.bat 作為批次檔，<br>
+						每當啟動 CB 前就執行這個再執行 CB 即可刪除些暫存檔。<br>
+						以下範例 CB 安裝路徑為 C，請自行依照自己的系統與環境去修正相關路徑。<br>
+						<font color="#FFFF00">============================== 複製以下文字 ==============================</font><br>
+						@echo off<br>
+						title 刪除快取並跳過 patch 執行 CB<br>
+						@echo --------------------------------------------------<br>
+						@echo 按任意按鍵後開始刪除<br>
+						@echo 包含以下於 programs 內的暫存檔案：<br>
+						@echo 副檔名為 *.twit<br>
+						@echo clanicon 資料夾與其內容檔案<br>
+						@echo img 資料夾與其內容檔案<br>
+						@echo polygon 資料夾與其內容檔案<br>
+						@echo queue 資料夾與其內容檔案<br>
+						@echo skin 資料夾與其內容檔案<br>
+						@echo --------------------------------------------------<br>
+						pause<br>
+						@echo 刪除 *.twit 檔案<br>
+						del /q "C:\Program Files (x86)\CyberStep\CosmicBreak_TW\programs\*.twit"<br>
+						@echo 刪除 clanicon 資料夾與其內容檔案<br>
+						rmdir /q /s "C:\Program Files (x86)\CyberStep\CosmicBreak_TW\programs\clanicon"<br>
+						@echo 刪除 img 資料夾與其內容檔案<br>
+						rmdir /q /s "C:\Program Files (x86)\CyberStep\CosmicBreak_TW\programs\img"<br>
+						@echo 刪除 polygon 資料夾與其內容檔案<br>
+						rmdir /q /s "C:\Program Files (x86)\CyberStep\CosmicBreak_TW\programs\polygon"<br>
+						@echo 刪除 queue 資料夾與其內容檔案<br>
+						rmdir /q /s "C:\Program Files (x86)\CyberStep\CosmicBreak_TW\programs\queue"<br>
+						@echo 刪除 skin 資料夾與其內容檔案<br>
+						rmdir /q /s "C:\Program Files (x86)\CyberStep\CosmicBreak_TW\programs\skin"<br>
+						@echo 按任意按鍵後執行 CB<br>
+						pause<br>
+						cd "C:\Program Files (x86)\CyberStep\CosmicBreak_TW\"<br>
+						start "" "C:\Program Files (x86)\CyberStep\CosmicBreak_TW\programs\cosmic.exe" -launch<br>
+						exit<br>
+						<font color="#FFFF00">============================== 複製以上文字 ==============================</font><br>
+						<br>
+						<font color="#00FFFF">※原理與副作用：</font><br>
+						此功能是大量刪除 CB 內的各種暫存檔案，就如同字面上面所述，<br>
+						副作用為每當進機庫、副機庫時，skin 都得重新讀取過一次，請自行斟酌使用。<br>
+						畢竟你已經把暫存檔砍了，他必然會重新讀取，但總比你堆著放些用不到的暫存檔好。<br>
+						<hr color="#FFFFFF">
+						<center><font color="#00FF00">不經由 patch 視窗直接執行 CB</font><br></center>
+						使用此方法前，當下必須更新到最新的版本才能進行遊戲，<br>
+						將 CB 目錄下的資料夾 programs 中的 cosmic.exe 建立一個捷徑至桌面後，<br>
+						將其捷徑內容的目標與起始文字修改成下列敘述：<br>
+						<br>
+						目標：<br>
+						"D:\Program Files\CyberStep\CosmicBreak_TW\programs\cosmic.exe" -launch<br>
+						起始位置：<br>
+						"D:\Program Files\CyberStep\CosmicBreak_TW\"<br>
+						<br>
+						之後就可以直接執行捷徑略過 patch 直接執行 CB 了。<br>
+						<hr color="#FFFFFF">
+						<center><font color="#00FF00">PTS 對照表</font><br></center>
+						<table border=1 width=600 height=auto bgcolor="#000000" cellspacing=0 cellpadding=0>
+							<tr>
+								<td width="auto"><div align="center"></div></td>
+								<td width="auto"><div align="center">PTS</div></td>
+								<td width="auto"><div align="center">UC</div></td>
+								<td width="auto"><div align="center">零件名稱</div></td>
+								<td width="auto"><div align="center">洞數</div></td>
+								<td width="auto"><div align="center">UC 換取 pts 比值(%)</div></td>
+							</tr>
+							<tr>
+								<td><div align="center">1.</div></td>
+								<td><div align="center">1250</div></td>
+								<td><div align="center">5000</div></td>
+								<td><div align="center">神威伊知那(有頭飾的版本)<br>(含 BD、BS、AM*2)</div></td>
+								<td><div align="center">--</div></td>
+								<td><div align="center">25</div></td>
+							</tr>
+							<tr>
+								<td><div align="center">2.</div></td>
+								<td><div align="center">180</div></td>
+								<td><div align="center">800</div></td>
+								<td><div align="center">鋼鐵鬥士 AM2</div></td>
+								<td><div align="center">2</div></td>
+								<td><div align="center">22.5</div></td>
+							</tr>
+							<tr>
+								<td><div align="center">3.</div></td>
+								<td><div align="center">250</div></td>
+								<td><div align="center">120</div></td>
+								<td><div align="center">巴路塔 AM</div></td>
+								<td><div align="center">1</div></td>
+								<td><div align="center">20.833</div></td>
+							</tr>
+							<tr>
+								<td><div align="center">4.</div></td>
+								<td><div align="center">270</div></td>
+								<td><div align="center">1500</div></td>
+								<td><div align="center">戰鬥芙蕾亞 BS</div></td>
+								<td><div align="center">2</div></td>
+								<td><div align="center">18</div></td>
+							</tr>
+						</table>
+						<font color="#FF0000">※pts 公式 = 零件總 cost * (零件洞數 + 1)</font>
+					</font>
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>
